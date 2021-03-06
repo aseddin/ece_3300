@@ -36,7 +36,7 @@ module simple_register_load
     end
     
     // Next State logic
-    always @(load, I)
+    always @(load, I, Q_reg)
     begin
         if (load)
             Q_next = I;
