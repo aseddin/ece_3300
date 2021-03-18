@@ -29,7 +29,7 @@ module udl_counter_tb(
     wire [BITS - 1:0] Q;
     
     // Instantiate module under test
-    udl_counter uut (
+    udl_counter #(.BITS(BITS)) uut (
         .clk(clk),
         .reset_n(reset_n),
         .enable(enable),

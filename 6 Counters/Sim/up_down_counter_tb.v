@@ -28,7 +28,7 @@ module up_down_counter_tb(
     wire [BITS - 1:0] Q;
     
     // Instantiate module under test
-    up_down_counter uut (
+    up_down_counter #(.BITS(BITS)) uut (
         .clk(clk),
         .reset_n(reset_n),
         .enable(enable),
