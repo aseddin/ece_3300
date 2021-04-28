@@ -34,7 +34,7 @@ module mux_8x1_nbit
         case(s)
             3'b000: f = w0;                
             3'b001: f = w1;
-            3'b010: f = w3;
+            3'b010: f = w2;
             3'b011: f = w3;
             3'b100: f = w4;
             3'b101: f = w5;
