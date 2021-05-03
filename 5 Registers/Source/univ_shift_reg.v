@@ -40,7 +40,7 @@ module univ_shift_reg
     end
     
     // Next state logic
-    always @(Q_reg, MSB_in, LSB_in, I)
+    always @(Q_reg, MSB_in, LSB_in, I, s)
     begin
         Q_next = Q_reg;
         case (s)
