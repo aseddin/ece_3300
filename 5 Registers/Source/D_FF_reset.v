@@ -49,7 +49,7 @@ module D_FF_reset(
     // Adding Synchronous clear
     
     // Next state logic
-    always @(D, clear_n)
+    always @(D, clear_n, Q_reg)
     begin
         Q_next = Q_reg;
         if(!clear_n)
